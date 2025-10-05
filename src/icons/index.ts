@@ -1,9 +1,12 @@
 export interface IconStyle {
 	size: "sm" | "md" | "lg";
+	color?: string;
+	onClick?: () => void;
+	className?: string;
 }
 
 export const iconStyleVariant: Record<Required<IconStyle>["size"], string> = {
-	sm: "size-2",
-	md: "size-4",
-	lg: "size-6",
+	sm: "size-3",
+	md: "size-5",
+	lg: "size-7",
 };

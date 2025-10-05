@@ -7,8 +7,8 @@ export const ShareIcon = (props: IconStyle) => {
 			fill="none"
 			viewBox="0 0 24 24"
 			strokeWidth={1.5}
-			stroke="currentColor"
-			className={iconStyleVariant[props.size]}
+			stroke={`${props.color ? props.color : "currentcolor"}`}
+			className={`${iconStyleVariant[props.size]}`}
 		>
 			<path
 				strokeLinecap="round"
